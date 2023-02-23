@@ -17,7 +17,7 @@ class home extends Component {
     console.log('this.props:', this.state)
     return (
       <div >
-        this is home
+        this is home 
       </div>
     )
   }
