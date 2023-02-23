@@ -1,0 +1,47 @@
+/* Base CSS */
+@import '../variable.scss';
+@import '../mixin.scss';
+@import './font.scss';
+@import '../../qcss_static/icons/sprite/css/qicon';
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-family: $font-name, 'Helvetica', 'Arial', 'Sans-serif', 'Verdana', 'Tahoma';
+  font-size: 16px !important;
+  line-height: 1.25 !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  // font-family: $font-name, 'Helvetica', 'Arial', 'Sans-serif', 'Verdana', 'Tahoma';
+  // font-size: $font-size;
+  font-size: 0.9rem;
+  line-height: 1.25;
+  @include mixin-base;
+}
+
+@media screen and (min-height: 880px), (min-width: 1820) {
+  html {
+    font-size: 20px !important;
+    line-height: 24px !important;
+  }
+}
+@media screen and (min-height: 1420px), (min-width: 2780) {
+  html {
+    font-size: 28px !important;
+    line-height: 34px !important;
+  }
+}
+@media screen and (min-height: 1960px), (min-width: 3740) {
+  html {
+    font-size: 40px !important;
+    line-height: 46px !important;
+  }
+}
+

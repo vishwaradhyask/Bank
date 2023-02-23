@@ -1,0 +1,100 @@
+.mixin-base {
+  display: block;
+}
+@mixin mixin-base {
+  display: block;
+}
+
+@function empty($value) {
+  @if not $value 
+      or $value == "" 
+      or $value == 0
+      or $value == ()
+      or length($value) == 0 {
+    @return true;
+  }
+  @return false;
+}
+
+@mixin print_result($index, $result, $max, $property) {
+  @if $index == $max {
+    #{$property}: $result;
+  }
+}
+
+@mixin get_px_value($iterator, $_pxValues, $max, $property, $values) {
+  @if $iterator <= $max {
+    $pxValues: '';
+    @if empty($_pxValues) {
+      $pxValues: nth($values, $iterator) + 0px;
+    } @else {
+      $pxValues: append($_pxValues, nth($values, $iterator) + 0px);
+    }
+    // @debug "pxValues: #{$pxValues}";
+
+    @include get_px_value(($iterator + 1), $pxValues, $max, $property, $values);
+    @include print_result($iterator, $pxValues, $max, $property);
+  }
+}
+
+@mixin get_rem_value($iterator, $_remValues, $max, $property, $values) {
+  @if $iterator <= $max {
+    $remValues: '';
+    @if empty($_remValues) {
+      $remValues: nth($values, $iterator) / 16 * 1rem;
+    } @else {
+      $remValues: append($_remValues, nth($values, $iterator) / 16 * 1rem);
+    }
+    // @debug "remValues: #{$remValues}";
+
+    @include get_rem_value(($iterator + 1), $remValues, $max, $property, $values);
+    @include print_result($iterator, $remValues, $max, $property);
+  }
+}
+
+@mixin mixin-remFix($property, $values...){
+  $max: length($values);
+  $pxValues: '';
+  $remValues: '';
+  // @debug "property: #{$property}";
+  // @debug "values: #{$values}";
+  // @debug "max: #{$max}";
+
+  @include get_px_value(1, $pxValues, $max, $property, $values);
+  @include get_rem_value(1, $remValues, $max, $property, $values);
+}
+
+.flexbox{
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inline-flexbox{
+  display: -ms-inline-flexbox;
+  display: inline-flexbox;
+}
+
+.flex-direction-column{
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.flex-direction-row{
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.align-items-center{
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.justify-content-center{
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.justify-content-end{
+  -ms-flex-pack: end;
+  justify-content: end;
+}

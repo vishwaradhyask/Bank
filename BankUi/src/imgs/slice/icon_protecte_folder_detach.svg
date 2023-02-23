@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <linearGradient id="icon_protecte_folder_detach-a" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#92C6FF"/>
+      <stop offset="100%" stop-color="#77B7FF"/>
+    </linearGradient>
+    <rect id="icon_protecte_folder_detach-c" width="18.133" height="17.222" x="7.467" y="1.59" rx="1.211"/>
+    <filter id="icon_protecte_folder_detach-b" width="116.5%" height="117.4%" x="-8.3%" y="-8.7%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.0469330578   0 0 0 0 0.282896193   0 0 0 0 0.473845109  0 0 0 0.162368881 0"/>
+    </filter>
+    <rect id="icon_protecte_folder_detach-e" width="21.333" height="17.222" x="5.867" y="5.829" rx="1.695"/>
+    <filter id="icon_protecte_folder_detach-d" width="114.1%" height="117.4%" x="-7%" y="-8.7%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.0469330578   0 0 0 0 0.282896193   0 0 0 0 0.473845109  0 0 0 0.162368881 0"/>
+    </filter>
+    <rect id="icon_protecte_folder_detach-g" width="21.333" height="17.222" x="5.867" y="4.239" rx="1.211"/>
+    <filter id="icon_protecte_folder_detach-f" width="114.1%" height="117.4%" x="-7%" y="-8.7%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.0469330578   0 0 0 0 0.282896193   0 0 0 0 0.473845109  0 0 0 0.162368881 0"/>
+    </filter>
+    <linearGradient id="icon_protecte_folder_detach-j" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#92C6FF"/>
+      <stop offset="100%" stop-color="#77B7FF"/>
+    </linearGradient>
+    <path id="icon_protecte_folder_detach-i" d="M1.64343907,5.82905983 L10.0010417,5.82905983 L10.0010417,5.82905983 L14.9479167,9.53846154 L30.3390233,9.53846154 C31.1414781,9.53846154 31.7919963,10.1889797 31.7919963,10.9914345 C31.7919963,11.0560657 31.7876839,11.1206249 31.7790879,11.1846819 L29.8253961,25.7434428 C29.6963374,26.7051777 28.8756657,27.4230769 27.90531,27.4230769 L4.37944122,27.4230769 C3.40132001,27.4230769 2.57662755,26.6939621 2.456749,25.7232148 L0.201419908,7.46010918 C0.103071039,6.66370399 0.668957496,5.93836251 1.46536269,5.84001364 C1.52444105,5.83271799 1.58391193,5.82905983 1.64343907,5.82905983 Z"/>
+    <filter id="icon_protecte_folder_detach-h" width="120.6%" height="132.4%" x="-10.3%" y="-20.8%" filterUnits="objectBoundingBox">
+      <feOffset dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0.167623855   0 0 0 0 0.332342618  0 0 0 0.135680726 0"/>
+    </filter>
+    <linearGradient id="icon_protecte_folder_detach-k" x1="50%" x2="50%" y1="0%" y2="89.728%">
+      <stop offset="0%" stop-color="#0036DF"/>
+      <stop offset="100%" stop-color="#0043CE" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(0 -2)">
+    <rect width="7.448" height="9.931" x="14.375" y="7" fill="#F4D5BD" fill-rule="nonzero"/>
+    <g transform="translate(2.1 2.667)">
+      <rect width="26.667" height="26.496" x="2.933" fill="url(#icon_protecte_folder_detach-a)" rx="1.937"/>
+      <use fill="#000" filter="url(#icon_protecte_folder_detach-b)" xlink:href="#icon_protecte_folder_detach-c"/>
+      <use fill="#FFF" xlink:href="#icon_protecte_folder_detach-c"/>
+      <use fill="#000" filter="url(#icon_protecte_folder_detach-d)" xlink:href="#icon_protecte_folder_detach-e"/>
+      <use fill="#FFF" xlink:href="#icon_protecte_folder_detach-e"/>
+      <use fill="#000" filter="url(#icon_protecte_folder_detach-f)" xlink:href="#icon_protecte_folder_detach-g"/>
+      <use fill="#FFF" xlink:href="#icon_protecte_folder_detach-g"/>
+      <use fill="#000" filter="url(#icon_protecte_folder_detach-h)" xlink:href="#icon_protecte_folder_detach-i"/>
+      <use fill="url(#icon_protecte_folder_detach-j)" xlink:href="#icon_protecte_folder_detach-i"/>
+      <polygon fill="url(#icon_protecte_folder_detach-k)" points="11.733 14.573 20.267 15.01 12.705 23.051 4.521 22.331" opacity=".139"/>
+      <rect width="8.533" height="2.12" x="11.733" y="13.513" fill="#FFF" rx="1.06"/>
+    </g>
+    <path fill="#A98258" fill-rule="nonzero" d="M35.0988169,15 L1.09960938,15 L1.09960938,35.8262218 C1.09960938,37.0268946 2.23477588,38 3.6354089,38 L32.5638099,38 C33.9635712,38 35.0996094,37.0268946 35.0996094,35.8262218 L35.0996094,15 L35.0988169,15 Z"/>
+    <polygon fill="#DAAE86" fill-rule="nonzero" points="34.902 15 1.138 15 0 22 36 22"/>
+    <rect width="9.997" height="6.102" x="7.1" y="27" fill="#F0CFAF" fill-rule="nonzero"/>
+    <g fill="#B29F7E" fill-rule="nonzero" transform="translate(8.355 27.805)">
+      <rect width="1" height="4.355" x=".013" y=".069"/>
+      <rect width="1" height="3.478" x="1.681" y=".069"/>
+      <rect width="1" height="4.355" x="3.351" y=".069"/>
+      <rect width="1" height="3.478" x="5.016" y=".069"/>
+      <rect width="1" height="4.355" x="6.684" y=".069"/>
+    </g>
+  </g>
+</svg>

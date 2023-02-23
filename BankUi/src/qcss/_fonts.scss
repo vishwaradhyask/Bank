@@ -1,0 +1,41 @@
+@mixin header-font {
+  font-family: Roboto-Medium;
+  margin-bottom: 7px;
+}
+
+.main-header {
+  @include header-font();
+  font-size: 20px;
+  color: #000000;
+  line-height: 24px;
+}
+
+.page-header {
+  @include header-font();    
+  font-size: 18px;
+  color: #000000;
+  line-height: 22px;
+}
+
+.content-header {
+  @include header-font()
+  font-size: 15px;
+  color: #1C2231;
+  line-height: 20px;
+}
+
+.table-header {
+  @include header-font()
+  font-size: 14px;
+  color: #2E384D;
+  line-height: 20px;
+}
+
+.wizard-title {
+  background: #A6A6A8;
+  padding: 8px;
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  color: #000000;
+  text-align: center;
+}

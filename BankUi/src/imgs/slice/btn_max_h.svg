@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <!-- <title>btn_max_h</title> -->
+    <desc>Created with Sketch.</desc>
+    <g id="symbol" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="windows/btn_max_h" stroke="#6B6E6E" stroke-width="2">
+            <g id="Group" transform="translate(14.000000, 14.000000) rotate(-315.000000) translate(-14.000000, -14.000000) translate(9.000000, 9.000000)">
+                <path d="M3.55271368e-15,3.27515792e-15 L10,10 L3.55271368e-15,3.27515792e-15 Z" id="close" transform="translate(5.000000, 5.000000) rotate(-270.000000) translate(-5.000000, -5.000000) "></path>
+                <path d="M2.79910775e-15,4.4408921e-15 L10,10 L2.79910775e-15,4.4408921e-15 Z" id="close" transform="translate(5.000000, 5.000000) rotate(-540.000000) translate(-5.000000, -5.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

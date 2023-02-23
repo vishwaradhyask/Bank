@@ -1,0 +1,676 @@
+.qicon-checkbox,
+.qicon-checkbox_dark,
+.qicon-checkbox_dark_disable,
+.qicon-checkbox_dark_hover,
+.qicon-checkbox_disable,
+.qicon-checkbox_hover,
+.qicon-checkbox_pressed,
+.qicon-checkbox_pressed_dark,
+.qicon-checkbox_pressed_dark_disable,
+.qicon-checkbox_pressed_dark_hover,
+.qicon-checkbox_pressed_disable,
+.qicon-checkbox_pressed_hover,
+.qicon-close,
+.qicon-close_active,
+.qicon-close_dark,
+.qicon-close_dark_active,
+.qicon-close_dark_hover,
+.qicon-close_hover,
+.qicon-column_draggable_sign,
+.qicon-first,
+.qicon-first_active,
+.qicon-first_disable,
+.qicon-hollow_close,
+.qicon-hollow_close_active,
+.qicon-hollow_close_hover,
+.qicon-last,
+.qicon-last_active,
+.qicon-last_disable,
+.qicon-max,
+.qicon-max_active,
+.qicon-max_dark,
+.qicon-max_dark_active,
+.qicon-max_dark_hover,
+.qicon-max_hover,
+.qicon-menu_arrow,
+.qicon-menu_select,
+.qicon-min,
+.qicon-min_active,
+.qicon-min_dark,
+.qicon-min_dark_active,
+.qicon-min_dark_hover,
+.qicon-min_hover,
+.qicon-next,
+.qicon-next_active,
+.qicon-next_disable,
+.qicon-previous,
+.qicon-previous_active,
+.qicon-previous_disable,
+.qicon-radio,
+.qicon-radio_disable,
+.qicon-radio_hover,
+.qicon-radio_pressed,
+.qicon-radio_pressed_disable,
+.qicon-radio_pressed_hover,
+.qicon-rating_empty,
+.qicon-rating_empty_hover,
+.qicon-rating_full,
+.qicon-refresh,
+.qicon-refresh_active,
+.qicon-refresh_disable,
+.qicon-scrolldown,
+.qicon-scrolldown_active,
+.qicon-scrolldown_dark,
+.qicon-scrolldown_dark_active,
+.qicon-scrolldown_dark_disable,
+.qicon-scrolldown_dark_hover,
+.qicon-scrolldown_disable,
+.qicon-scrolldown_hover,
+.qicon-scrollup,
+.qicon-scrollup_active,
+.qicon-scrollup_dark,
+.qicon-scrollup_dark_active,
+.qicon-scrollup_dark_disable,
+.qicon-scrollup_dark_hover,
+.qicon-scrollup_disable,
+.qicon-scrollup_hover,
+.qicon-solid_close,
+.qicon-solid_close_active,
+.qicon-solid_close_hover,
+.qicon-sort,
+.qicon-sort_asc,
+.qicon-sort_desc {
+  /* background-image: url(../images/qicon.png); */
+  background-image: url(../qcss_static/icons/sprite/images/qicon.png);
+  /* background-image: url(/src/qcss_static/icons/sprite/images/qicon.png); */
+}
+.qicon-checkbox {
+  background-position: -88px -60px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-checkbox_dark {
+  background-position: 0px -88px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-checkbox_dark_disable {
+  background-position: -48px -76px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-checkbox_dark:hover {
+  background-position: -88px -72px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-checkbox_dark_hover {
+  background-position: -88px -72px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-checkbox_disable {
+  background-position: -12px -88px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-checkbox:hover {
+  background-position: -24px -100px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-checkbox_hover {
+  background-position: -24px -100px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-checkbox_pressed {
+  background-position: 0px -76px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-checkbox_pressed_dark {
+  background-position: -12px -76px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-checkbox_pressed_dark_disable {
+  background-position: -24px -76px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-checkbox_pressed_dark:hover {
+  background-position: -36px -76px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-checkbox_pressed_dark_hover {
+  background-position: -36px -76px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-checkbox_pressed_disable {
+  background-position: -88px -36px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-checkbox_pressed:hover {
+  background-position: -88px -48px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-checkbox_pressed_hover {
+  background-position: -88px -48px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-close {
+  background-position: -70px -100px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-close:active {
+  background-position: -81px -100px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-close_active {
+  background-position: -81px -100px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-close_dark {
+  background-position: -112px -55px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-close_dark:active {
+  background-position: -112px -66px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-close_dark_active {
+  background-position: -112px -66px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-close_dark:hover {
+  background-position: -22px -112px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-close_dark_hover {
+  background-position: -22px -112px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-close:hover {
+  background-position: -48px -100px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-close_hover {
+  background-position: -48px -100px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-column_draggable_sign {
+  background-position: -123px 0px;
+  width: 5px;
+  height: 21px;
+}
+.qicon-first {
+  background-position: -56px -15px;
+  width: 16px;
+  height: 15px;
+}
+.qicon-first:active {
+  background-position: -32px -32px;
+  width: 16px;
+  height: 15px;
+}
+.qicon-first_active {
+  background-position: -32px -32px;
+  width: 16px;
+  height: 15px;
+}
+.qicon-first_disable {
+  background-position: -32px -47px;
+  width: 16px;
+  height: 15px;
+}
+.qicon-hollow_close {
+  background-position: -56px -62px;
+  width: 14px;
+  height: 14px;
+}
+.qicon-hollow_close:active {
+  background-position: 0px -62px;
+  width: 14px;
+  height: 14px;
+}
+.qicon-hollow_close_active {
+  background-position: 0px -62px;
+  width: 14px;
+  height: 14px;
+}
+.qicon-hollow_close:hover {
+  background-position: -14px -62px;
+  width: 14px;
+  height: 14px;
+}
+.qicon-hollow_close_hover {
+  background-position: -14px -62px;
+  width: 14px;
+  height: 14px;
+}
+.qicon-last {
+  background-position: -48px -47px;
+  width: 16px;
+  height: 15px;
+}
+.qicon-last:active {
+  background-position: -72px 0px;
+  width: 16px;
+  height: 15px;
+}
+.qicon-last_active {
+  background-position: -72px 0px;
+  width: 16px;
+  height: 15px;
+}
+.qicon-last_disable {
+  background-position: 0px -32px;
+  width: 16px;
+  height: 15px;
+}
+.qicon-max {
+  background-position: -92px -100px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-max:active {
+  background-position: -112px 0px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-max_active {
+  background-position: -112px 0px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-max_dark {
+  background-position: -112px -11px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-max_dark:active {
+  background-position: -112px -22px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-max_dark_active {
+  background-position: -112px -22px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-max_dark:hover {
+  background-position: -112px -33px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-max_dark_hover {
+  background-position: -112px -33px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-max:hover {
+  background-position: -112px -44px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-max_hover {
+  background-position: -112px -44px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-menu_arrow {
+  background-position: -20px -16px;
+  width: 16px;
+  height: 16px;
+}
+.qicon-menu_select {
+  background-position: -40px 0px;
+  width: 16px;
+  height: 16px;
+}
+.qicon-min {
+  background-position: -112px -77px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-min:active {
+  background-position: -112px -88px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-min_active {
+  background-position: -112px -88px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-min_dark {
+  background-position: -112px -99px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-min_dark:active {
+  background-position: 0px -112px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-min_dark_active {
+  background-position: 0px -112px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-min_dark:hover {
+  background-position: -11px -112px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-min_dark_hover {
+  background-position: -11px -112px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-min:hover {
+  background-position: -59px -100px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-min_hover {
+  background-position: -59px -100px;
+  width: 11px;
+  height: 11px;
+}
+.qicon-next {
+  background-position: -16px -32px;
+  width: 16px;
+  height: 15px;
+}
+.qicon-next:active {
+  background-position: -56px 0px;
+  width: 16px;
+  height: 15px;
+}
+.qicon-next_active {
+  background-position: -56px 0px;
+  width: 16px;
+  height: 15px;
+}
+.qicon-next_disable {
+  background-position: -40px -16px;
+  width: 16px;
+  height: 15px;
+}
+.qicon-previous {
+  background-position: -56px -30px;
+  width: 16px;
+  height: 15px;
+}
+.qicon-previous:active {
+  background-position: 0px -47px;
+  width: 16px;
+  height: 15px;
+}
+.qicon-previous_active {
+  background-position: 0px -47px;
+  width: 16px;
+  height: 15px;
+}
+.qicon-previous_disable {
+  background-position: -16px -47px;
+  width: 16px;
+  height: 15px;
+}
+.qicon-radio {
+  background-position: -36px -100px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-radio_disable {
+  background-position: -60px -76px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-radio:hover {
+  background-position: -72px -76px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-radio_hover {
+  background-position: -72px -76px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-radio_pressed {
+  background-position: -88px 0px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-radio_pressed_disable {
+  background-position: -88px -12px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-radio_pressed:hover {
+  background-position: -88px -24px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-radio_pressed_hover {
+  background-position: -88px -24px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-rating_empty {
+  background-position: 0px 0px;
+  width: 20px;
+  height: 16px;
+}
+.qicon-rating_empty:hover {
+  background-position: -20px 0px;
+  width: 20px;
+  height: 16px;
+}
+.qicon-rating_empty_hover {
+  background-position: -20px 0px;
+  width: 20px;
+  height: 16px;
+}
+.qicon-rating_full {
+  background-position: 0px -16px;
+  width: 20px;
+  height: 16px;
+}
+.qicon-refresh {
+  background-position: -72px -15px;
+  width: 16px;
+  height: 15px;
+}
+.qicon-refresh:active {
+  background-position: -72px -30px;
+  width: 16px;
+  height: 15px;
+}
+.qicon-refresh_active {
+  background-position: -72px -30px;
+  width: 16px;
+  height: 15px;
+}
+.qicon-refresh_disable {
+  background-position: -72px -45px;
+  width: 16px;
+  height: 15px;
+}
+.qicon-scrolldown {
+  background-position: -24px -88px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrolldown:active {
+  background-position: -36px -88px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrolldown_active {
+  background-position: -36px -88px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrolldown_dark {
+  background-position: -48px -88px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrolldown_dark:active {
+  background-position: -60px -88px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrolldown_dark_active {
+  background-position: -60px -88px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrolldown_dark_disable {
+  background-position: -72px -88px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrolldown_dark:hover {
+  background-position: -84px -88px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrolldown_dark_hover {
+  background-position: -84px -88px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrolldown_disable {
+  background-position: -100px 0px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrolldown:hover {
+  background-position: -100px -12px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrolldown_hover {
+  background-position: -100px -12px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrollup {
+  background-position: -100px -24px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrollup:active {
+  background-position: -100px -36px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrollup_active {
+  background-position: -100px -36px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrollup_dark {
+  background-position: -100px -48px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrollup_dark:active {
+  background-position: -100px -60px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrollup_dark_active {
+  background-position: -100px -60px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrollup_dark_disable {
+  background-position: -100px -72px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrollup_dark:hover {
+  background-position: -100px -84px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrollup_dark_hover {
+  background-position: -100px -84px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrollup_disable {
+  background-position: 0px -100px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrollup:hover {
+  background-position: -12px -100px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-scrollup_hover {
+  background-position: -12px -100px;
+  width: 12px;
+  height: 12px;
+}
+.qicon-solid_close {
+  background-position: -70px -62px;
+  width: 14px;
+  height: 14px;
+}
+.qicon-solid_close:active {
+  background-position: -28px -62px;
+  width: 14px;
+  height: 14px;
+}
+.qicon-solid_close_active {
+  background-position: -28px -62px;
+  width: 14px;
+  height: 14px;
+}
+.qicon-solid_close:hover {
+  background-position: -42px -62px;
+  width: 14px;
+  height: 14px;
+}
+.qicon-solid_close_hover {
+  background-position: -42px -62px;
+  width: 14px;
+  height: 14px;
+}
+.qicon-sort {
+  background-position: -48px -32px;
+  width: 6px;
+  height: 12px;
+}
+.qicon-sort_asc {
+  background-position: -100px -96px;
+  width: 6px;
+  height: 4px;
+}
+.qicon-sort_desc {
+  background-position: -106px -96px;
+  width: 6px;
+  height: 4px;
+}

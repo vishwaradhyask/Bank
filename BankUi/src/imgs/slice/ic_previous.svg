@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="8px" viewBox="0 0 7 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>ic_previous</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ic_previous" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_pagination_arrow_previous_a" fill="#2F2F2F" fill-rule="nonzero">
+            <g id="Triangle-2-Copy-2" transform="translate(3.500000, 4.000000) scale(-1, 1) translate(-3.500000, -4.000000) ">
+                <path d="M4.36064123,6.53908603 C3.74859384,7.4912569 2.75367896,7.48722761 2.14422156,6.53908603 L-0.469839408,2.47235403 C-1.08188681,1.52018316 -0.651715662,0.748296155 0.494469334,0.748296155 L6.01039347,0.748296155 C7.15501387,0.748296155 7.58415961,1.52421245 6.97470221,2.47235403 L4.36064123,6.53908603 Z" id="Triangle-2-Copy" transform="translate(3.251704, 4.000000) rotate(-90.000000) translate(-3.251704, -4.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

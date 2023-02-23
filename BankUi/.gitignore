@@ -1,0 +1,53 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependency directories
+node_modules/
+jspm_packages/
+/.pnp
+.pnp.js
+### react ###
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+dist/
+
+
+# testing
+/coverage
+
+# production
+/build
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+#logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace

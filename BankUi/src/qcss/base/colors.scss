@@ -1,0 +1,44 @@
+$faulty-drives: #9A7EFF;
+$bad_drives: #FF6F6F;
+$moderate_drives: #FFC341;
+// $healthy_drives: #3FAFFC;
+// $inProgress_drives: #A1A1A1;
+$healthy_drives: #2BA53F;
+$inProgress_drives: #0098FF;
+$unsupported_drives__overview: #8C8C8C;
+$unsupported_drives__prediction: #6E6E6E;
+$empty_drives: #FFFFFF;
+$focused_drive: #72FEFF;
+$text-page__title: #00225A;
+$text-module__title: #00225A;
+$text-color__black: #000000;
+$text-color__grey: #5A5A5A;
+$link_blue_color: #0000FF;
+
+.drve-text__faulty {
+    color: $faulty-drives;
+}
+.drve-text__bad {
+    color: $bad_drives;
+}
+.drve-text__moderate {
+    color: $moderate_drives;
+}
+.drve-text__healthy {
+    color: $healthy_drives;
+}
+.drve-text__training {
+    color: $inProgress_drives;
+}
+.drve-text__unsupported {
+    color: $unsupported_drives__overview;
+}
+.drve-text__empty {
+    color: $empty_drives;
+}
+.drive-text__black {
+    color: $text-color__black;
+}
+.drive-text__grey {
+    color: $text-color__grey;
+}

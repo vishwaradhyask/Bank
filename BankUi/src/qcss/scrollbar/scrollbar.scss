@@ -1,0 +1,96 @@
+@import "../base/base.scss";
+@import "../variable.scss";
+
+.#{$name}-scrollbar-track {
+  width: 12px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #eaeaea;
+}
+
+.#{$name}-scrollbar-thumb {
+  border: 1px solid #c0c0c0;
+  background-color: #d1d1d1;
+  width: 100%;
+  min-height: 10%;
+  position: absolute;
+  top: 1rem;
+}
+
+.#{$name}-scrollbar-thumb:hover,
+.#{$name}-scrollbar-thumb-hover {
+  border: 1px solid #898989;
+  background-color: #9b9b9b;
+}
+
+.#{$name}-scrollbar-top-button,
+.#{$name}-scrollbar-bottom-button {
+  position: absolute;
+}
+
+.#{$name}-scrollbar-top-button {
+  top: 0;
+
+  // &::before {
+  //   content: '\25B2'; // ▲
+  //   display: block;
+  // }
+}
+
+.#{$name}-scrollbar-bottom-button {
+  bottom: 0;
+
+  // &::before {
+  //   content: '\25BC'; // ▼
+  //   display: block;
+  // }
+}
+
+.#{$name}-scrollbar-dark-track {
+  width: 12px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #7d7d7d;
+}
+
+.#{$name}-scrollbar-dark-thumb {
+  border: 1px solid #424242;
+  background-color: #4f4f4f;
+  width: 100%;
+  min-height: 10%;
+  position: absolute;
+  top: 1rem;
+}
+
+.#{$name}-scrollbar-dark-thumb:hover,
+.#{$name}-scrollbar-dark-thumb-hover {
+  border: 1px solid #4c4c4c;
+  background-color: #383838;
+}
+
+.#{$name}-scrollbar-dark-top-button,
+.#{$name}-scrollbar-dark-bottom-button {
+  position: absolute;
+}
+
+.#{$name}-scrollbar-dark-top-button {
+  top: 0;
+
+  &::before {
+    content: '\25B2'; // ▲
+    display: block;
+  }
+}
+
+.#{$name}-scrollbar-dark-bottom-button {
+  bottom: 0;
+
+  &::before {
+    content: '\25BC'; // ▼
+    display: block;
+  }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_protecte_pc</title>
+    <defs>
+        <linearGradient x1="0%" y1="26.035503%" x2="55.8980084%" y2="49.9968375%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.223475743" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.144640516" offset="99.9868032%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="symbol" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-/-protecte-/-pc">
+            <rect id="Rectangle" fill="#4A4A4A" x="16.9285714" y="26.3571429" width="2.14285714" height="3.21428571"></rect>
+            <path d="M10.1628745,29.5714286 L25.9492562,29.5714286 C26.1298797,29.5714286 26.2983425,29.6624482 26.3973396,29.8135257 L27.0994183,30.8849543 C27.2615786,31.1324239 27.1924217,31.4644946 26.944952,31.6266549 C26.8576991,31.6838294 26.7556517,31.7142857 26.6513348,31.7142857 L9.39788602,31.7142857 C9.10201919,31.7142857 8.86217174,31.4744383 8.86217174,31.1785714 C8.86217174,31.0669522 8.89703672,30.9581205 8.96189626,30.8672794 L9.72688475,29.7958508 C9.82743841,29.6550173 9.98982788,29.5714286 10.1628745,29.5714286 Z" id="Rectangle-Copy" fill="#4A4A4A"></path>
+            <rect id="Rectangle" stroke="#4A4A4A" stroke-width="1.76470588" fill="#3EA4FF" x="3.44117647" y="6.44117647" width="28.751313" height="20.4477416" rx="1.03794643"></rect>
+            <path d="M5.36147584,7.32352941 L31.3101366,7.32352941 L31.3101366,7.32352941 L4.32352941,26.0065651 L4.32352941,8.36147584 C4.32352941,7.78823386 4.78823386,7.32352941 5.36147584,7.32352941 Z" id="Rectangle" fill="url(#linearGradient-1)"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,71 @@
+// Name:            Font
+// Description:     Include Roboto font, source use woff2 or woff or ttf (Priority high to low)
+// WOFF / WOFF2 can load faster than other formats because they are compressed
+// TTF has most possible browser support
+//
+// [Note] Based on current UI definition, weight name mapping is NOT the common value
+// Common mapping: thin(100) light(300) normal(400) medium(500) bold(700)
+// UI Guideline  : thin(100) light(300) normal(400) medium(700) bold(900)
+// Problem -> if you use "font-weight: bold", UI team would say this is medium
+// ========================================================================
+
+@import '../variable.scss';
+$font-path: '../fonts/roboto';
+$font-thin: 100;
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 700;
+$font-bold: 900;
+$notice-text-color: #195a87;
+$alert-text-color: #c1272d;
+
+@mixin font-face($fname, $name, $style, $weight){
+  @font-face {
+    font-family: $fname;
+    // src: url('#{$font-path}/#{$name}/Roboto-#{$name}.ttf') format('truetype');
+    src: url(#{$font-path}/#{$name}/Roboto-#{$name}.ttf) format('truetype'),
+    url(#{$font-path}/#{$name}/Roboto-#{$name}.woff) format('woff'),
+    url(#{$font-path}/#{$name}/Roboto-#{$name}.woff2) format('woff2');
+    font-style: $style;
+    font-weight: $weight;
+  }
+}
+
+@include font-face('Roboto-Thin', 'Thin', normal, $font-thin);
+// @include font-face('ThinItalic', italic, $font-thin);
+@include font-face('Roboto-Light', 'Light', normal, $font-light);
+// @include font-face('LightItalic', italic, $font-light);
+@include font-face('Roboto-Regular', 'Regular', normal, $font-normal);
+// @include font-face('Italic', italic, $font-normal);
+@include font-face('Roboto-Medium', 'Medium', normal, $font-medium);
+// @include font-face('MediumItalic', italic, $font-medium);
+@include font-face('Roboto-Bold', 'Bold', normal, $font-bold);
+// @include font-face('BoldItalic', italic, $font-bold);
+
+.#{$name}-font-thin {
+  font-weight: $font-thin;
+}
+
+.#{$name}-font-light {
+  font-weight: $font-light;
+}
+
+.#{$name}-font-normal {
+  font-weight: $font-normal;
+}
+
+.#{$name}-font-medium {
+  font-weight: $font-medium;
+}
+
+.#{$name}-font-bold {
+  font-weight: $font-bold;
+}
+
+.#{$name}-notice-text {
+  color: $font-bold;
+}
+
+.#{$name}-alert-text {
+  color: $font-bold;
+}

@@ -1,0 +1,97 @@
+@import "../variable.scss";
+@import "../mixin.scss";
+
+$qcss-tab-header-height: 58px;
+$qcss-tab-header-menu-height: 20px;
+$qcss-tab-content-min-height: 158px;
+$qcss-tab-footer-height: 54px;
+// $qcss-window-bg-color: #fafafa;
+$qcss-window-bg-color: #FFFFFF;
+
+@mixin window-text-ellipsis(){
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.#{$name}-window {
+  position: absolute;
+  border: 1px solid #ccc;
+  background-color: $qcss-window-bg-color;
+  display: flex;
+  flex-direction: column;
+  // @include mixin-remFix(box-shadow, 0 1 2 1 rgba(0,0,0,0.4));
+  @include mixin-remFix(box-shadow, 0, 1, 2, 1, rgba(0,0,0,0.4));
+  &.#{$name}-window-focus{
+    // @include mixin-remFix(box-shadow, 0 2 5 1 rgba(0,0,0,0.8));
+    @include mixin-remFix(box-shadow, 0, 2, 5, 1, rgba(0,0,0,0.8));
+  }
+
+  .#{$name}-window-header {
+    border-bottom: 1px solid #b0b0b0;
+
+    .title-wrapper {
+      @include window-text-ellipsis();
+
+      height: $qcss-tab-header-height;
+      padding: 17px 35px;
+
+      .title {
+        font-size: 20px;
+        font-weight: 700;
+        color: #000;
+      }
+    }
+
+    .#{$name}-menu {
+      height: $qcss-tab-header-menu-height;
+      padding: 0 35px;
+
+      .#{$name}-menu-list {
+        background-color: transparent;
+      }
+
+      &.#{$name}-menu-scroll {
+        padding: 0 15px;
+      }
+    }
+
+    .#{$name}-window-icons {
+      position: absolute;
+      line-height: 0;
+      font-size: 0;
+      right: 10px;
+      top: 10px;
+
+      .#{$name}-window-tool {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .#{$name}-window-content {
+    padding: 20px 35px;
+    overflow: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    .content {
+      min-height: $qcss-tab-content-min-height;
+      flex-grow: 1;
+    }
+  }
+
+  .#{$name}-window-footer {
+    height: $qcss-tab-footer-height;
+    padding: 0 35px 24px;
+
+    .#{$name}-button-group.left {
+      float: left;
+    }
+
+    .#{$name}-button-group.right {
+      float: right;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+@import "../base/base.scss";
+@import "../variable.scss";
+@import "../mixin.scss";
+
+@mixin window-tool-fake-img(){
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@mixin window-tool(){
+  margin: 0;
+  border: none;
+  overflow: visible;
+  text-transform: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  line-height: 0;
+  outline: none;
+}
+
+.#{$name}-window-tool {
+  @include window-tool();
+
+  &.#{$name}-window-close {
+    @include window-tool-fake-img();
+    // @include qicon-close();
+    @extend .qicon-close;
+
+    &:hover {
+      // @include qicon-close_hover();
+      @extend .qicon-close_hover;
+    }
+
+    &:active {
+      // @include qicon-close_active();
+      @extend .qicon-close_active;
+    }
+  }
+
+  &.#{$name}-window-max {
+    @include window-tool-fake-img();
+    // @include qicon-max();
+    @extend .qicon-max;
+
+    &:hover {
+      // @include qicon-max_hover();
+      @extend .qicon-max_hover;
+    }
+
+    &:active {
+      // @include qicon-max_active();
+      @extend .qicon-max_active;
+    }
+  }
+
+  &.#{$name}-window-min {
+    @include window-tool-fake-img();
+    // @include qicon-min();
+    @extend .qicon-min;
+
+    &:hover {
+      // @include qicon-min_hover();
+      @extend .qicon-min_hover;
+    }
+
+    &:active {
+      // @include qicon-min_active();
+      @extend .qicon-min_active;
+    }
+  }
+}
+
+.#{$name}-window-tool-dark-warp {
+  .#{$name}-window-tool {
+    @include window-tool();
+
+    &.#{$name}-window-close {
+      @include window-tool-fake-img();
+      // @include qicon-close_dark();
+      @extend .qicon-close_dark;
+
+      &:hover {
+        // @include qicon-close_dark_hover();
+        @extend .qicon-close_dark_hover;
+      }
+
+      &:active {
+        // @include qicon-close_dark_active();
+        @extend .qicon-close_dark_active;
+      }
+    }
+
+    &.#{$name}-window-max {
+      @include window-tool-fake-img();
+      // @include qicon-max_dark();
+      @extend .qicon-max_dark;
+
+      &:hover {
+        // @include qicon-max_dark_hover();
+        @extend .qicon-max_dark_hover;
+      }
+
+      &:active {
+        // @include qicon-max_dark_active();
+        @extend .qicon-max_dark_active;
+      }
+    }
+
+    &.#{$name}-window-min {
+      @include window-tool-fake-img();
+      // @include qicon-min_dark();
+      @extend .qicon-min_dark;
+
+      &:hover {
+        // @include qicon-min_dark_hover();
+        @extend .qicon-min_dark_hover;
+      }
+
+      &:active {
+        // @include qicon-min_dark_active();
+        @extend .qicon-min_dark_active;
+      }
+    }
+  }
+}

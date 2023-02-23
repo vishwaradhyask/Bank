@@ -1,0 +1,55 @@
+@import './fonts';
+
+@mixin button-common {
+	font-family: Roboto-Bold;
+	font-size: 15px;
+	text-align: center;
+	line-height: 22px;
+	border-radius: 4px;
+    cursor: pointer;
+	max-width: 100px;
+	padding: 4px 8px;
+	margin: 4px;
+	min-width: 80px;
+}
+
+.blue_button {
+	@include button-common();
+	color: #FFFFFF;
+	background: #1973E8;
+	border: none;
+	&:hover {
+		background: #0A5FCC;
+		border: none;
+	}
+	&:active {
+		background: #0C4DA2;
+		border: none;
+	}
+}
+
+
+.white_button {
+	@include button-common();
+	border: 1px solid #2F2F2F;
+	background: #FFFFFF;
+	color: #2F2F2F;
+
+	&:hover {
+		border: 1px solid #848484;
+	}
+	&:active {
+		border: 1px solid #8AB8E0;
+	}
+}
+
+
+input {
+    background: #FFFFFF;
+    border: 1px solid #2F2F2F;
+    border-radius: 4px;
+    padding: 4px;
+    outline: unset;
+}  
+  
+

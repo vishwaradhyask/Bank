@@ -1,0 +1,132 @@
+@import "../variable.scss";
+@import "../mixin.scss";
+
+$qcss-tooltip-color: #2f2f2f;
+$qcss-tooltip-padding: 20;
+$qcss-tooltip-padding-top: 0;
+$qcss-tooltip-padding-left: $qcss-tooltip-padding;
+$qcss-tooltip-padding-bottom: 0;
+$qcss-tooltip-padding-right: $qcss-tooltip-padding;
+$qcss-tooltip-min-height: 21;
+$qcss-tooltip-max-width: 300;
+$qcss-tooltip-background: #e5e4f2;
+$qcss-tooltip-background: linear-gradient(#fefefe, #e5e4f2);
+$qcss-tooltip-border-style: solid;
+$qcss-tooltip-border-width: 1;
+$qcss-tooltip-border-color: #767676;
+$qcss-tooltip-display: inline-block;
+
+@mixin tooltip-color(){
+  color: $qcss-tooltip-color;
+}
+
+@mixin tooltip-background(){
+  background: $qcss-tooltip-background;
+}
+
+@mixin tooltip-border(){
+  border-style: $qcss-tooltip-border-style;
+  border-color: $qcss-tooltip-border-color;
+
+  @include mixin-remFix(border-width, $qcss-tooltip-border-width);
+}
+
+@mixin tooltip-min-height {
+    @include mixin-remFix(min-height, $qcss-tooltip-min-height);
+}
+
+@mixin tooltip-max-width {
+@include mixin-remFix(max-width, $qcss-tooltip-max-width);
+}
+
+@mixin tooltip-display {
+display: $qcss-tooltip-display;
+}
+
+@mixin qcss-tooltip-padding {
+@include mixin-remFix(padding, $qcss-tooltip-padding-top, $qcss-tooltip-padding-left, $qcss-tooltip-padding-bottom, $qcss-tooltip-padding-right);
+}
+
+.tooltip-min-height {
+  @include mixin-remFix(min-height, $qcss-tooltip-min-height);
+}
+
+.tooltip-max-width {
+  @include mixin-remFix(max-width, $qcss-tooltip-max-width);
+}
+
+.tooltip-display {
+  display: $qcss-tooltip-display;
+}
+
+.qcss-tooltip-padding {
+  @include mixin-remFix(padding, $qcss-tooltip-padding-top, $qcss-tooltip-padding-left, $qcss-tooltip-padding-bottom, $qcss-tooltip-padding-right);
+}
+
+.#{$name}-tooltip-warp {
+  @include tooltip-color();
+  @include tooltip-background();
+  @include tooltip-min-height();
+  @include tooltip-max-width();
+  @include tooltip-display();
+  @include qcss-tooltip-padding();
+  @include tooltip-border();
+
+  clear: both;
+
+  &::before {
+    content: '';
+    vertical-align: middle;
+    height: 100%;
+    display: inline-block;
+
+    @include mixin-remFix(min-height, $qcss-tooltip-min-height);
+  }
+}
+
+.#{$name}-tooltip-content {
+  cursor: default;
+  vertical-align: middle;
+  pointer-events: pointer;
+  overflow-wrap: break-word;
+}
+
+.app-tooltip__black {
+  max-width: 220px;
+  line-height: 20px;
+  background: #444444!important;
+  border: 1px solid rgba(255,255,255,0.20);
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.2); 
+  border-color: #444444!important;
+  padding: 10px 12px 10px 12px;
+  z-index: 200;
+  position: fixed;
+  // transform: scaleX(-1);
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 18px;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.app-tooltip__white {
+  max-width: 260px;
+  line-height: 20px;
+  background: #FFFFFF;
+  border: 1px solid #878787;
+  border-radius: 4px;
+  border-radius: 4px;
+  // box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.2); 
+  padding: 10px 12px 10px 12px;
+  z-index: 200;
+  position: fixed;
+  // transform: scaleX(-1);
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  color: #000000;
+  line-height: 18px;
+  overflow-wrap: break-word;
+  white-space: normal;
+}

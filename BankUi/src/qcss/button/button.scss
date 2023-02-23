@@ -1,0 +1,279 @@
+@import "../variable.scss";
+@import "../mixin.scss";
+
+$qcss-button-min-height: 30;
+$qcss-button-min-width: 110;
+$qcss-button-font-size: 14;
+$qcss-button-color: #2f2f2f;
+$qcss-button-hover-color: #707070;
+$qcss-button-focus-color: #2f2f2f;
+$qcss-button-active-color: #2f2f2f;
+$qcss-button-bg-color: #fff;
+$qcss-button-border-color: #707070;
+$qcss-button-focus-border-color: #2f2f2f;
+$qcss-button-active-border-color: #2f2f2f;
+$qcss-button-border-width: 1;
+$qcss-button-border-radius: 4;
+$qcss-button-padding-right: 22;
+$qcss-button-padding-left: 22;
+$qcss-button-padding-top: 4;
+$qcss-button-padding-bottom: 4;
+$qcss-button-disabled-color: #aeaeae;
+$qcss-button-disabled-border-color: #aeaeae;
+$qcss-button-qicon-margin-right: 5;
+
+/* Default button variable*/
+$qcss-button-default-border-color: #2f2f2f;
+
+/* Radius button variable*/
+$qcss-button-radius-min-height: 22;
+$qcss-button-radius-font-size: 12;
+$qcss-button-radius-border-radius: 8;
+$qcss-button-radius-padding-top: 2;
+$qcss-button-radius-padding-bottom: 2;
+
+/* Inverse button variable*/
+$qcss-button-inverse-color: #fff;
+$qcss-button-inverse-hover-color: rgba(255, 255, 255, 0.7);
+$qcss-button-inverse-focus-color: #fff;
+$qcss-button-inverse-active-color: #fff;
+$qcss-button-inverse-bg-color: transparent;
+$qcss-button-inverse-border-color: rgba(255, 255, 255, 0.7);
+$qcss-button-inverse-focus-border-color: #fff;
+$qcss-button-inverse-active-border-color: #fff;
+$qcss-button-inverse-disabled-color: rgba(255, 255, 255, 0.5);
+$qcss-button-inverse-disabled-border-color: rgba(255, 255, 255, 0.5);
+
+/* Group buttons variable*/
+$qcss-group-button-margin-first-child: 0;
+$qcss-group-button-margin-not-first-child: 8;
+
+@mixin button-min-height(){
+  @include mixin-remFix(min-height, $qcss-button-min-height);
+}
+
+@mixin button-min-width(){
+  @include mixin-remFix(min-width, $qcss-button-min-width);
+}
+
+@mixin button-font-size(){
+  @include mixin-remFix(font-size, $qcss-button-font-size);
+}
+
+@mixin button-color(){
+  color: $qcss-button-color;
+}
+
+@mixin button-bg(){
+  background-color: $qcss-button-bg-color;
+}
+
+@mixin button-border(){
+  border-color: $qcss-button-border-color;
+  border-style: solid;
+  @include mixin-remFix(border-radius, $qcss-button-border-radius);
+  @include mixin-remFix(border-width, $qcss-button-border-width);
+}
+
+@mixin button-padding(){
+  @include mixin-remFix(padding-right, $qcss-button-padding-right);
+  @include mixin-remFix(padding-left, $qcss-button-padding-left);
+  @include mixin-remFix(padding-top, $qcss-button-padding-top);
+  @include mixin-remFix(padding-bottom, $qcss-button-padding-bottom);
+}
+
+@mixin button-box-shadow(){
+  box-shadow: 0 0 0 1px inset;
+}
+
+@mixin button-align(){
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@mixin button-hover(){
+  color: $qcss-button-hover-color;
+}
+
+@mixin button-focus(){
+  color: $qcss-button-focus-color;
+  border-color: $qcss-button-focus-border-color;
+}
+
+@mixin button-active(){
+  color: $qcss-button-active-color;
+  border-color: $qcss-button-active-border-color;
+  @include button-box-shadow();
+}
+
+@mixin button-disabled(){
+  color: $qcss-button-disabled-color;
+  border-color: $qcss-button-disabled-border-color;
+  box-shadow: none;
+  cursor: default;
+}
+
+@mixin button-qicon-margin(){
+  @include mixin-remFix(margin-right, $qcss-button-qicon-margin-right);
+}
+
+@mixin button-reset(){
+  outline: none;
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+/* Radius button mixin*/
+@mixin button-radius-min-height(){
+  @include mixin-remFix(min-height, $qcss-button-radius-min-height);
+}
+
+@mixin button-radius-font-size(){
+  @include mixin-remFix(font-size, $qcss-button-radius-font-size);
+}
+
+@mixin button-radius-border(){
+  @include mixin-remFix(border-radius, $qcss-button-radius-border-radius);
+}
+
+@mixin button-radius-padding(){
+  @include mixin-remFix(padding-right, $qcss-button-padding-right);
+  @include mixin-remFix(padding-left, $qcss-button-padding-left);
+  @include mixin-remFix(padding-top, $qcss-button-radius-padding-top);
+  @include mixin-remFix(padding-bottom, $qcss-button-radius-padding-bottom);
+}
+
+/* Inverse button mixin*/
+@mixin button-inverse-color(){
+  color: $qcss-button-inverse-color;
+}
+
+@mixin button-inverse-bg(){
+  background-color: $qcss-button-inverse-bg-color;
+}
+
+@mixin button-inverse-border(){
+  border-color: $qcss-button-inverse-border-color;
+}
+
+@mixin button-inverse-hover(){
+  color: $qcss-button-inverse-hover-color;
+}
+
+@mixin button-inverse-focus(){
+  color: $qcss-button-inverse-focus-color;
+  border-color: $qcss-button-inverse-focus-border-color;
+}
+
+@mixin button-inverse-active(){
+  color: $qcss-button-inverse-active-color;
+  border-color: $qcss-button-inverse-active-border-color;
+  @include button-box-shadow();
+}
+
+@mixin button-inverse-disabled(){
+  color: $qcss-button-inverse-disabled-color;
+  border-color: $qcss-button-inverse-disabled-border-color;
+}
+
+/* Group button mixin*/
+@mixin group-button-margin-first-child(){
+  @include mixin-remFix(margin-left, $qcss-group-button-margin-first-child);
+}
+
+@mixin group-button-margin-not-first-child(){
+  @include mixin-remFix(margin-left, $qcss-group-button-margin-not-first-child);
+}
+
+@mixin group-button-reset(){
+  font-size: 0;
+}
+
+/* QCSS button style*/
+.#{$name}-button {
+  @include button-bg();
+  @include button-border();
+  @include button-color();
+  @include button-font-size();
+  @include button-min-height();
+  @include button-min-width();
+  @include button-padding();
+  @include button-reset();
+  @include button-align();
+
+  &:hover {
+    @include button-hover();
+  }
+
+  &:focus {
+    @include button-focus();
+  }
+
+  &:active {
+    @include button-active();
+  }
+
+  &.#{$name}-button-default {
+    border-color: $qcss-button-default-border-color;
+
+    &.#{$name}-button-inverse {
+      border-color: $qcss-button-inverse-focus-border-color;
+    }
+  }
+
+  &.#{$name}-button-radius {
+    @include button-radius-min-height();
+    @include button-radius-font-size();
+    @include button-radius-border();
+    @include button-radius-padding();
+  }
+
+  &.#{$name}-button-inverse {
+    @include button-inverse-bg();
+    @include button-inverse-border();
+    @include button-inverse-color();
+
+    &:hover {
+      @include button-inverse-hover();
+    }
+
+    &:focus {
+      @include button-inverse-focus();
+    }
+
+    &:active {
+      @include button-inverse-active();
+    }
+  }
+
+  .qicon {
+    @include button-qicon-margin();
+  }
+}
+
+.#{$name}-button.disabled,
+.#{$name}-button[disabled],
+fieldset[disabled] .#{$name}-button {
+  @include button-disabled();
+}
+
+.#{$name}-button-inverse.disabled,
+.#{$name}-button-inverse[disabled],
+fieldset[disabled] .#{$name}-button-inverse {
+  @include button-inverse-disabled();
+}
+
+/* QCSS button groups */
+.#{$name}-button-group {
+  @include group-button-reset();
+
+  .#{$name}-button:first-child {
+    @include group-button-margin-first-child();
+  }
+
+  .#{$name}-button:not(:first-child) {
+    @include group-button-margin-not-first-child();
+  }
+}

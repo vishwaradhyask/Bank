@@ -1,0 +1,219 @@
+@import '../variable.scss';
+
+$triangle-width: 14px;
+$header-height: 52px;
+$header-fontsize: 16px;
+$header-icon-size: 30px;
+$footer-height: 54px;
+$button-height: 30px;
+
+.#{$name}-wizard-spl {
+  min-height: 100%;
+  position: relative;
+
+  div.content {
+    padding: 20px 35px $footer-height + 20px;
+  }
+
+  div.footer {
+    height: $footer-height;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 35px 24px;
+
+    .qcss-button-group.left {
+      float: left;
+    }
+
+    .step-text {
+      float: right;
+      color: #1e9aff;
+      font-size: 14px;
+      margin-right: 15px;
+      line-height: $button-height;
+    }
+
+    .qcss-button-group.right {
+      float: right;
+    }
+  }
+
+  div.progress {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #d9d9d9;
+      display: table;
+      width: 100%;
+      height: 8px;
+    }
+
+    li {
+      display: table-cell;
+
+      &.active {
+        background-color: #369eff;
+      }
+    }
+  }
+}
+
+.#{$name}-wizard-ind {
+  min-height: 100%;
+  position: relative;
+
+  &.reverse {
+    li:first-child div.step:hover::before {
+      border-color: transparent;
+      background-color: #dafbff;
+    }
+
+    div.step {
+      &:hover {
+        margin-left: -$triangle-width;
+        cursor: pointer;
+
+        .tab {
+          background-color: #dafbff;
+
+          .title {
+            text-decoration: underline;
+          }
+        }
+
+        &::before {
+          background-color: transparent;
+          content: "";
+          display: block;
+          float: left;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: $header-height/2 0 $header-height/2 $triangle-width;
+          border-color: #dafbff #dafbff #dafbff transparent;
+        }
+
+        &::after {
+          z-index: 999;
+          border-color: transparent transparent transparent #dafbff;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  .tab {
+    float: left;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #eaeaea;
+  }
+
+  li {
+    float: left;
+
+    &:first-child {
+      div.step {
+        padding-left: $triangle-width;
+
+        &.active::before {
+          border-color: transparent;
+        }
+      }
+    }
+
+    div.step {
+      display: block;
+      color: #2f2f2f;
+      text-align: center;
+      height: $header-height;
+      text-decoration: none;
+
+      .icon {
+        display: block;
+        float: left;
+        width: $header-icon-size;
+        height: $header-icon-size;
+        background-color: #2f2f2f;
+        margin: ($header-height - $header-icon-size - 2)/2 0 ($header-height - $header-icon-size - 2)/2 12px;
+      }
+
+      .title {
+        padding: ($header-height - $header-fontsize - 4)/2 12px;
+        font-size: $header-fontsize;
+        float: left;
+      }
+
+      &.active {
+        margin-left: -$triangle-width;
+
+        .tab {
+          background-color: #d5d5d5;
+        }
+
+        &::after {
+          background-color: transparent;
+          border-color: transparent transparent transparent #d5d5d5;
+        }
+
+        &::before {
+          background-color: transparent;
+          content: "";
+          display: block;
+          float: left;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: $header-height/2 0 $header-height/2 $triangle-width;
+          border-color: #d5d5d5 #d5d5d5 #d5d5d5 transparent;
+        }
+      }
+
+      &::after {
+        background-color: transparent;
+        content: "";
+        display: block;
+        float: left;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: $header-height/2 0 $header-height/2 $triangle-width;
+        border-color: transparent;
+      }
+    }
+  }
+
+  div.content {
+    padding: 20px 35px $footer-height + 20px;
+  }
+
+  div.footer {
+    height: $footer-height;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 35px 24px;
+
+    .qcss-button-group.left {
+      float: left;
+    }
+
+    .qcss-button-group.right {
+      float: right;
+    }
+
+    .qcss-button {
+      border-radius: 5px;
+    }
+  }
+}

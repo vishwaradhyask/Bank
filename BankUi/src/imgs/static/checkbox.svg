@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="108">
+    <defs>
+        <symbol id="Check">
+            <path d="M11,1V11H1V1H11m1-1H0V12H12V0Z"/>
+            <path d="M9.39,1.5a.9.9,0,0,0-.76.42L4.83,8,3.32,6A.9.9,0,1,0,1.89,7.11l2.3,3a.9.9,0,0,0,.71.36h0a.9.9,0,0,0,.72-.42l4.49-7.21A.9.9,0,0,0,9.39,1.5Z"/>
+        </symbol>
+        <symbol id="Uncheck">
+            <path d="M11,1V11H1V1H11m1-1H0V12H12V0Z"/>
+        </symbol>
+        <symbol id="Indeterminate">
+            <path d="M11,1V11H1V1H11m1-1H0V12H12V0Z"/>
+            <rect x="2" y="5" width="8" height="2"/>
+        </symbol>
+    </defs>
+    <use x="0" y="0"  fill="#4b4b4b" xlink:href="#Uncheck" />
+    <use x="0" y="12" fill="#2f2f2f" xlink:href="#Uncheck" />
+    <use x="0" y="24" fill="#d3d3d3" xlink:href="#Uncheck" />
+    <use x="0" y="36" fill="#4b4b4b" xlink:href="#Check" />
+    <use x="0" y="48" fill="#2f2f2f" xlink:href="#Check" />
+    <use x="0" y="60" fill="#d3d3d3" xlink:href="#Check" />
+    <use x="0" y="72" fill="#4b4b4b" xlink:href="#Indeterminate" />
+    <use x="0" y="84" fill="#2f2f2f" xlink:href="#Indeterminate" />
+    <use x="0" y="96" fill="#d3d3d3" xlink:href="#Indeterminate" />
+</svg>

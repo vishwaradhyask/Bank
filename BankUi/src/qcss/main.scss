@@ -1,0 +1,14 @@
+// import all scss
+@import "./mixin.scss";
+@import "./variable.scss";
+
+@import "./window/window.scss";
+@import "./window-tool/window-tool.scss";
+@import "./wizard/wizard.scss";
+@import "./button/button.scss";
+@import "./scrollbar/scrollbar.scss";
+@import "./tooltip/tooltip.scss";
+@import "./dialog/dialog.scss";
+
+@import './buttons';
+@import './fonts';
