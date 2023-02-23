@@ -16,7 +16,7 @@ class home extends Component {
     console.log('this.props:', this.props)
     console.log('this.props:', this.state)
     return (
-      <div >
+      <div className='home-page' >
         this is home 
       </div>
     )
