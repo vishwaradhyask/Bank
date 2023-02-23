@@ -1,7 +1,66 @@
-.home-page{
+.home-page {
     height: 100%;
     width: 100%;
-    background-image:url('../../imgs/home.jpg');
+    background-image: (radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../imgs/home.jpg"));
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .log-in {
+        height: 50%;
+        width: 35%;
+        background: rgba(255, 255, 255, 0.5);
+
+        .welcometxt {
+            display: flex;
+            justify-content: center;
+            margin: 104px 0px 0px 0xp;
+            margin-top: 58px;
+
+            h1 {
+                font-size: 25px;
+            }
+        }
+
+        .user-name {
+            display: flex;
+            justify-content: center;
+            margin-top: 35px;
+            border: black 1px;
+
+            .username-icon{
+                margin-right: 5px;
+                img{
+                    margin: 4px 0px 0px 10px;
+                }
+            }
+
+            .usrname-input{
+                input{
+                    border: none;
+                    background-color: transparent;
+                    color: black;
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .bank-head-icon {
+        background: rgba(255, 255, 255, 0.5);
+        height: 50px;
+        width: 100px;
+        border-radius: 150px 150px 0 0;
+        margin-top: -50px;
+
+        img {
+            height: 65px;
+            width: 60px;
+            margin: 20px;
+        }
+    }
 }
