@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
-  <g fill="none" fill-rule="evenodd" stroke="#FFF">
-    <polyline stroke-width="1.5" points="9 9.591 9 8 9 32.813 31.845 32.808"/>
-    <rect width="3.5" height="3.923" x="12.25" y="26.25" fill="#FFF" stroke-width=".5" opacity=".513" rx=".972" transform="matrix(1 0 0 -1 0 56.423)"/>
-    <rect width="3.5" height="8.154" x="18.25" y="22.25" fill="#FFF" stroke-width=".5" opacity=".787" rx=".972" transform="matrix(1 0 0 -1 0 52.654)"/>
-    <rect width="3.5" height="15.077" x="24.25" y="15.25" fill="#FFF" stroke-width=".5" rx=".972" transform="matrix(1 0 0 -1 0 45.577)"/>
-  </g>
-</svg>
