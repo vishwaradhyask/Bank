@@ -13,6 +13,8 @@
         height: 50%;
         width: 35%;
         background: rgba(255, 255, 255, 0.5);
+        min-width: 450px;
+        max-width: 450px;
 
         .welcometxt {
             display: flex;
