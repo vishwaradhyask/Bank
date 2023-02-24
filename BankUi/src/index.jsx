@@ -1,6 +1,6 @@
 import 'intl';
 import 'intl/locale-data/jsonp/en';
-
+import { PopupProvider } from "react-custom-popup";
 import 'babel-polyfill'
 import 'react-app-polyfill/ie11'
 import 'react-app-polyfill/stable'
@@ -45,7 +45,9 @@ ReactDOM.render(
   <Provider store={store}>
     <MultiLang>
       <HashRouter>
-        <MainApp />
+        <PopupProvider>
+          <MainApp />
+        </ PopupProvider>
       </HashRouter>
     </MultiLang>
   </Provider>,
