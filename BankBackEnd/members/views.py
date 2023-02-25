@@ -24,7 +24,7 @@ class RegisterUser(APIView):
         ser = UserDetailsSerializer(data=data)
         if not ser.is_valid():
             print("error", ser.error_messages, ser.errors)
-            return Response({'status': 403, 'errors': ser.errors, 'message': 'something went wrong', 'template_name': 'assessments.html'})
+            return Response({'status': 403, 'errors': ser.errors, 'message': 'something went wrong'}, status=500)
         ser.save()
         serializer = UserSerilaizer(data=data)
         if not serializer.is_valid():
@@ -39,12 +39,11 @@ class RegisterUser(APIView):
 def members(request):
     return render(request, 'index.html')
 
-
 def checkUserPresent(user):
     try:
-        UsersDetails.objects.get(username='Sangu')
+        UsersDetails.objects.get(username=user)
     except Exception as E:
-        return Response({'status': 403, 'message': 'user is not registration:{}'.format(E)})
+        return Response({'status': 403, 'message': 'user is not registration:{}'.format(E)}, status=500)
 
 
 class SavingAccountView(APIView):
@@ -60,6 +59,24 @@ class SavingAccountView(APIView):
                 print("error", ser.error_messages, ser.errors)
                 return Response({'status': 403, 'errors':ser.errors, 'message': 'something went wrong'})
             ser.save()
-            return Response({'status': 200, 'message': 'success'})
+            return Response({'status': 200, 'message': 'success'}, status=200)
         except Exception as E:
             return Response({'status': 500, 'message': 'something went wrong:{}'.format(E)}, status=500)
+
+class Checksavingaccountuser(APIView):
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
+    def get(self,request):
+        try:
+            user = request.user.username
+            data = SavingAccount.objects.filter(username=user).values()
+            print("len", len(data))
+            if(len(data)>0):
+                l = []
+                for i in data:
+                    l.append(i)
+                return Response({'status': 200, 'message': 'success', "body":l}, status=200)   
+            else:        
+                return Response({'status': 403, 'message': 'saving account not exit for this user please ceate one'}, status=200)
+        except Exception as E:
+            return Response({'status': 500, 'message': 'something went wrong:{}'.format(E)}, status=500)    
