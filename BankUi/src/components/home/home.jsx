@@ -34,16 +34,11 @@ class home extends Component {
   loginvalidation = () => {
     const { username, password } = this.state
     if (username == '') {
-      // const alert = useAlert()
-      PopupActions.showAlert({title:"Bank", text: 'username can not empty!!', type: DialogType.WARNING})
+      PopupActions.showAlert({title:"Bank", text: 'Username can not empty!!', type: DialogType.WARNING})
     }
-    // if (password == '') {
-    //   this.setState({
-    //     popmsg: "User Name can not be empty!!",
-    //     pop: true
-    //   })
-    //   // Alert.alert("Gulberga Bank", "Password can not be empty!!");
-    // }
+    if (password == '') {
+      PopupActions.showAlert({title:"Bank", text: 'Password can not empty!!', type: DialogType.WARNING})
+    }
   }
 
   handleHidePop = () =>{
