@@ -6,4 +6,5 @@ urlpatterns = [
     path('register/', views.RegisterUser.as_view(), name='reg'),
     path('creaet_saving_account/', views.SavingAccountView.as_view(), name='savingAccount'),
     path('fetch_saving_account/', views.Checksavingaccountuser.as_view(), name='getsavingAccount'),
+    path('deposite_saving_account/', views.deposite.as_view(), name='getsavingAccount'),
 ]   

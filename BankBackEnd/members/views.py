@@ -39,6 +39,7 @@ class RegisterUser(APIView):
 def members(request):
     return render(request, 'index.html')
 
+
 def checkUserPresent(user):
     try:
         UsersDetails.objects.get(username=user)
@@ -49,6 +50,7 @@ def checkUserPresent(user):
 class SavingAccountView(APIView):
     authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
+
     def post(self, request, format=None):
         try:
             user = request.user.username
@@ -57,26 +59,45 @@ class SavingAccountView(APIView):
             ser = SavingAccountSerializer(data=data)
             if not ser.is_valid():
                 print("error", ser.error_messages, ser.errors)
-                return Response({'status': 403, 'errors':ser.errors, 'message': 'something went wrong'})
+                return Response({'status': 403, 'errors': ser.errors, 'message': 'something went wrong'})
             ser.save()
             return Response({'status': 200, 'message': 'success'}, status=200)
         except Exception as E:
             return Response({'status': 500, 'message': 'something went wrong:{}'.format(E)}, status=500)
 
+
 class Checksavingaccountuser(APIView):
     authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
-    def get(self,request):
+
+    def get(self, request):
         try:
             user = request.user.username
             data = SavingAccount.objects.filter(username=user).values()
             print("len", len(data))
-            if(len(data)>0):
+            if (len(data) > 0):
                 l = []
                 for i in data:
                     l.append(i)
-                return Response({'status': 200, 'message': 'success', "body":l}, status=200)   
-            else:        
+                return Response({'status': 200, 'message': 'success', "body": l}, status=200)
+            else:
                 return Response({'status': 403, 'message': 'saving account not exit for this user please ceate one'}, status=200)
         except Exception as E:
-            return Response({'status': 500, 'message': 'something went wrong:{}'.format(E)}, status=500)    
+            return Response({'status': 500, 'message': 'something went wrong:{}'.format(E)}, status=500)
+
+
+class deposite(APIView):
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        try:
+            deposite = json.loads(request.body)
+            print('payload:', deposite.get('balance'))
+            user = request.user.username
+            userdata = SavingAccount.objects.get(username=user)
+            userdata.balance += deposite.get('balance')
+            userdata.save()
+            return Response({'status': 200, 'message': 'success'}, status=200)
+        except Exception as E:
+            return Response({'status': 500, 'message': 'something went wrong:{}'.format(E)}, status=500)
