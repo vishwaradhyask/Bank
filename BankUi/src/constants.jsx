@@ -13,7 +13,9 @@ const app = {
   GET_SYS_DRIVERS: 'GET_SYS_DRIVERS',
   SET_SYS_DRIVERS: 'SET_SYS_DRIVERS',
   BROWSE_FILES: 'BROWSE_FILES',
-  HOST: 'HOST'
+  HOST: 'HOST',
+  SET_CMP: 'SET_CMP',
+  LOG_IN:'LOG_IN'
 }
 
 const auth = {

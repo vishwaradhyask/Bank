@@ -5,6 +5,7 @@ import "./app.scss"
 import constants from './constants'
 import LoadingMask from './components/common/loading_mask'
 import Home from './components/home/home'
+import Register from './components/register/register'
 const { SET_LANG } = constants.app
 
 class App extends Component {
@@ -30,12 +31,16 @@ class App extends Component {
 
   render() {
     const { LogIn, connectToNas, appStore } = this.props
-    const {isLoading, isLoading2} = appStore
+    const {isLoading, isLoading2, CMP} = appStore
+    console.log('this.state@ app:', this.state)
+    console.log('this.state@ props:', this.props)
+    let cmp = <Home/>
+    if(CMP === 'reg') cmp = <Register />
     return (
       <div className="app">
         {isLoading ? <LoadingMask text={<FormattedMessage id="COMMON_01" />} /> : null}
         {isLoading2 ? <LoadingMask text={<FormattedMessage id="COMMON_08" />} /> : null}
-        <Home/>
+        {cmp}
       </div>
     )
   }

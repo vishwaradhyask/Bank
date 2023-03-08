@@ -13,6 +13,7 @@ const defaultState = {
   langStr: allLangStr[defaultLang.toLowerCase()], // TODO: make this default value by getting local storage or API
   appVersion: { version: '', date: '', firmware: '' },
   sidebar: false,
+  CMP:'login'
 }
 
 const setLanguage = (state, action) => {
@@ -48,6 +49,8 @@ export default function App(state = defaultState, action) {
       return { ...state, startLoadRepoDetail: true }
     case constants.app.LOAD_REPO_DETAIL_STOP:
       return { ...state, startLoadRepoDetail: false }
+    case constants.app.SET_CMP:
+      return { ...state, CMP: action.data }
     case constants.app.SET_LANG:
       return setLanguage(state, action)
     case constants.globalAction.SAVE_VERSION:

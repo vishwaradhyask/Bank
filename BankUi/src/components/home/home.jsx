@@ -4,7 +4,8 @@ import { FormattedMessage } from 'react-intl'
 import Bank_head from '../../images/bank_head.png'
 import User_png from '../../images/user .png'
 import Password_png from '../../images/password.png'
-import {PopupActions, DialogType} from "react-custom-popup";
+import { PopupActions, DialogType } from "react-custom-popup";
+import appAction from '../../actions/app'
 import './home.scss'
 // const alert = useAlert();
 class home extends Component {
@@ -12,8 +13,7 @@ class home extends Component {
     super(props)
     this.state = {
       username: '',
-      password: '',
-
+      password: ''
     }
 
   }
@@ -33,19 +33,40 @@ class home extends Component {
   }
   loginvalidation = () => {
     const { username, password } = this.state
+    const { login, showloading, hideLoading } = this.props
     if (username == '') {
-      PopupActions.showAlert({title:"Bank", text: 'Username can not empty!!', type: DialogType.WARNING})
+      PopupActions.showAlert({ title: "Bank", text: 'Username can not empty!!', type: DialogType.WARNING })
+      return
     }
     if (password == '') {
-      PopupActions.showAlert({title:"Bank", text: 'Password can not empty!!', type: DialogType.WARNING})
+      PopupActions.showAlert({ title: "Bank", text: 'Password can not empty!!', type: DialogType.WARNING })
+      return
     }
+    let payload = {
+      username: username,
+      password: password
+    }
+    const callback = (resp) => {
+      console.log('cllabck to login:', resp)
+      hideLoading()
+      if (!resp.success && resp.statusCode === 400) {
+        PopupActions.showAlert({ title: "Bank", text: 'Invalid username or Password', type: DialogType.WARNING })
+      }
+    }
+    showloading()
+    login(payload, callback)
   }
 
-  handleHidePop = () =>{
+  handleHidePop = () => {
     this.setState({
       popmsg: "",
       pop: false
     })
+  }
+
+  handlereg = () => {
+    const { setCmp } = this.props
+    setCmp('reg')
   }
 
   render() {
@@ -94,7 +115,7 @@ class home extends Component {
               dont have account ?
             </div>
             <div className='signupbtn'>
-              <button>SIGN UP</button>
+              <button onClick={this.handlereg} >SIGN UP</button>
             </div>
             <div className='account'>here</div>
           </div>
@@ -112,7 +133,10 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-
+  setCmp: (data) => dispatch(appAction.setCmp(data)),
+  login: (data, callback) => dispatch(appAction.login(data, callback)),
+  showloading: () => dispatch(appAction.showLoading()),
+  hideLoading: () => dispatch(appAction.hideLoading()) 
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(home) 
+export default connect(mapStateToProps, mapDispatchToProps)(home)
